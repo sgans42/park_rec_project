@@ -1,0 +1,103 @@
+{% extends "park_app/base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background: #fafafa;
+        color: #333333;
+        margin-top: 5rem;
+    }
+
+    h1 {
+        color: #444444;
+        text-align: center;
+        border-bottom: 2px solid #dddddd;
+        padding-bottom: 10px;
+    }
+
+    .video-section, .content-section {
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li ul {
+        padding-left: 20px;
+    }
+
+    .img-container {
+        margin-bottom: 10px;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="container">
+    <h1>Innovation Center</h1>
+    <div class="video-section">
+        <!-- Placeholder for video -->
+        <video width="100%" controls>
+            <source src="path_to_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="row content-section">
+        <div class="col-md-6">
+            <ul>
+                <li>Point 1
+                    <ul>
+                        <li>Sub-point 1a</li>
+                    </ul>
+                </li>
+                <li>Point 2
+                    <ul>
+                        <li>Sub-point 2a</li>
+                    </ul>
+                </li>
+                <li>Point 3
+                    <ul>
+                        <li>Sub-point 3a</li>
+                    </ul>
+                </li>
+                <li>Point 4
+                    <ul>
+                        <li>Sub-point 4a</li>
+                    </ul>
+                </li>
+                <li>Point 5
+                    <ul>
+                        <li>Sub-point 5a</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+1" alt="Image 1"></div>
+            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+2" alt="Image 2"></div>
+            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+3" alt="Image 3"></div>
+            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+4" alt="Image 4"></div>
+            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+5" alt="Image 5"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

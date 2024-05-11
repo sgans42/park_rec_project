@@ -1,0 +1,139 @@
+{% extends "park_app/base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background: #fafafa;
+        color: #333333;
+        margin-top: 5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #444444;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .bg-steel {
+        background-color: #5f788a;
+    }
+
+    .site-header .navbar-nav .nav-link {
+        color: #cbd5db;
+    }
+
+    .site-header .navbar-nav .nav-link:hover {
+        color: #ffffff;
+    }
+
+    .site-header .navbar-nav .nav-link.active {
+        font-weight: 500;
+    }
+
+    .content-section {
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .content-section h1 {
+        border-bottom: 2px solid #dddddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .article-title {
+        color: #444444;
+    }
+
+    a.article-title:hover {
+        color: #428bca;
+        text-decoration: none;
+    }
+
+    .article-content {
+        white-space: pre-line;
+    }
+
+    .article-img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    .list-item {
+        background: #f9f9f9;
+        border: 1px solid #e3e3e3;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+
+    .list-item a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .list-item a:hover {
+        text-decoration: underline;
+    }
+
+    .article-metadata {
+        padding-bottom: 1px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    .article-metadata a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .article-svg {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    .account-img {
+        height: 125px;
+        width: 125px;
+        margin-right: 20px;
+        margin-bottom: 16px;
+    }
+
+    .account-heading {
+        font-size: 2.5rem;
+    }
+</style>
+
+<div class="container">
+    <div class="content-section">
+        <h1>Historical Sites</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li class="list-item"><a href="{% url 'historical_innovation' %}">Innovation Center</a></li>
+                    <li class="list-item"><a href="#">Link 2</a></li>
+                    <li class="list-item"><a href="#">Link 3</a></li>
+                    <li class="list-item"><a href="#">Link 4</a></li>
+                    <li class="list-item"><a href="#">Link 5</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" alt="Historical Site" class="article-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

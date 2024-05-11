@@ -24,6 +24,22 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
+    .video-section {
+        text-align: center;
+        width: 100%; /* Full width */
+    }
+
+    .video-section a {
+        display: block; /* Make the anchor block to fill the space */
+        width: 100%;
+    }
+
+    .video-section img {
+        width: 100%; /* Full width of its parent */
+        height: auto; /* Maintain the aspect ratio */
+        object-fit: contain; /* Ensure the image is scaled properly */
+    }
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -37,67 +53,134 @@
         padding-left: 20px;
     }
 
+    .point-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .list-section {
+        width: 48%; /* Slightly less than half to fit padding */
+    }
+
     .img-container {
-        margin-bottom: 10px;
+        width: 48%; /* Slightly less than half to fit padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-container img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 100%; /* Ensure the image fills the width of the container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Adjust to cover the area, can be changed to 'contain' if you want to see the whole image without cropping */
     }
 </style>
 
 <div class="container">
     <h1>Innovation Center</h1>
     <div class="video-section">
-        <!-- Placeholder for video -->
-        <video width="100%" controls>
-            <source src="path_to_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Placeholder for website preview link -->
+        <p>Explore the Innovation Center:</p>
+        <a href="https://kuula.co/share/5V0yH/collection/7cyvJ?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1" target="_blank">
+            <img src="/media/documents/interact.png" alt="Innovation Center">
+        </a>
     </div>
 
-    <div class="row content-section">
-        <div class="col-md-6">
-            <ul>
-                <li>Point 1
-                    <ul>
-                        <li>Sub-point 1a</li>
-                    </ul>
-                </li>
-                <li>Point 2
-                    <ul>
-                        <li>Sub-point 2a</li>
-                    </ul>
-                </li>
-                <li>Point 3
-                    <ul>
-                        <li>Sub-point 3a</li>
-                    </ul>
-                </li>
-                <li>Point 4
-                    <ul>
-                        <li>Sub-point 4a</li>
-                    </ul>
-                </li>
-                <li>Point 5
-                    <ul>
-                        <li>Sub-point 5a</li>
-                    </ul>
-                </li>
-            </ul>
+<div class="container">
+    <h1>Innovation Center</h1>
+    <div class="main-container">
+
+        <div>
+            <p>The Innovation Campus at Western Kentucky University is an intellectual hub that spurs innovative collaboration, promotes problem solving and nurtures talent to elevate the economy and the region. The Innovation Campus brings together industry partners, faculty and students to drive innovation and economic development in the region. The campus creates an environment where companies can engage meaningfully with researchers, students, start-ups and funders to tackle challenges that grow the strengths and diversity of our nation’s business community. The campus offers state-of-the-art labs and equipment, collaborative workspaces and access to expert faculty and resources. Through partnerships with companies and organizations, the Innovation Campus provides students with hands-on experience and career opportunities while helping businesses stay competitive by developing new technologies and solutions. The campus focuses on key areas such as advanced manufacturing, engineering and applied sciences, making it a hub for innovation and entrepreneurship in the region</p>
         </div>
-        <div class="col-md-6">
-            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+1" alt="Image 1"></div>
-            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+2" alt="Image 2"></div>
-            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+3" alt="Image 3"></div>
-            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+4" alt="Image 4"></div>
-            <div class="img-container"><img src="https://via.placeholder.com/500?text=Image+5" alt="Image 5"></div>
+        <!-- Point 1 and Image 1 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Eyeconic
+                        <ul>
+                            <li>Eyeconic are leaders in Point of Sale Media and provide the only fully managed digital signage, menu and touch screen kiosk solutions </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+<img src="/media/documents/eyeco.jpg" alt="Historical Site" class="article-img">
+
+            </div>
+        </div>
+
+        <!-- Point 2 and Image 2 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Thermal Analysis Laboratory
+                        <ul>
+                            <li>The Thermal Analysis Lab provides access to advanced scientific instrumentation for the measurement of the thermal properties of materials in support of the educational, research and public service missions of WKU for faculty and students requiring thermal analysis data.  AMI also actively conducts third party thermal analysis of samples for local, regional and national businesses and governmental agencies</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+<img src="/media/documents/therm.jpg" alt="Historical Site" class="article-img">
+            </div>
+        </div>
+
+        <!-- Point 3 and Image 3 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>WKU CR320
+                        <ul>
+                            <li>Conference Room 320 is open to both faculty and students alike for meetings, briefings, ect</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+<img src="/media/documents/cr320.jpg" alt="Historical Site" class="article-img">
+            </div>
+        </div>
+
+        <!-- Point 4 and Image 4 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Advanced Materials Institute (AMI)
+                        <ul>
+                            <li>The Advanced Materials Institute (AMI) is a laboratory at Western Kentucky University that specializes in the analysis and characterization of a variety of materials. Faculty at WKU frequently utilize the instrumentation at our institute for their research purposes.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+<img src="/media/documents/ami.jpg" alt="Historical Site" class="article-img">
+            </div>
+        </div>
+
+        <!-- Point 5 and Image 5 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Kentucky Mesonet
+                        <ul>
+                            <li>The Kentucky Mesonet, a division of the Kentucky Climate Center, is a statewide monitoring weather and climate monitoring infrastructure with an operations center housed at Western Kentucky University’s Innovation Campus.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+<img src="/media/documents/meso.jpg" alt="Historical Site" class="article-img">
+            </div>
         </div>
     </div>
+</div>
 </div>
 
 {% endblock %}

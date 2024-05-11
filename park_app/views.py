@@ -10,6 +10,10 @@ def home(request):
 def parks(request):
     return render(request, 'park_app/parks.html')
 
+
+def parks_chuck(request):
+    return render(request, 'park_app/parks_chuck.html')
+
 def historical(request):
     return render(request, 'park_app/historical.html')
 

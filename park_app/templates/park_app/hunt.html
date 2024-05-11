@@ -1,16 +1,108 @@
 {% extends "park_app/base.html" %}
 
 {% block content %}
+<style>
+    body {
+        background: #fafafa;
+        color: #333333;
+        margin-top: 5rem;
+    }
 
-<body>
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-    <h1>Blog Posts </h1>
+    .info-container {
+        width: 100%;
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-around; /* Better spacing of info blocks */
+    }
 
-</body>
-    <h1>Blog Posts </h1>
+    .info-block {
+        display: inline-block;
+        margin: 0 20px; /* Reduced margin for better space management */
+    }
 
+    .info-title {
+        font-size: 16px;
+        color: #444;
+    }
 
-<p>test1 </p>
+    .info-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
 
+    .column {
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 45%; /* Adjust for side-by-side columns */
+        margin: 10px;
+    }
+
+    h2 {
+        border-bottom: 4px solid black;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 8px 0;
+        border-bottom: 2px solid #dddddd;
+
+    }
+</style>
+
+<div class="container">
+    <div class="info-container">
+        <div class="info-block">
+            <div class="info-title">Name</div>
+            <div class="info-value">Stephen Gansman</div>
+        </div>
+        <div class="info-block">
+            <div class="info-title">Current Points</div>
+            <div class="info-value">14</div>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Quests Available</h2>
+        <ul>
+            <li>Explore the trails of Chuck Crume Nature Park</li>
+            <li>Participate in the Cleanup Event at Covington Woods Park</li>
+            <li>Attend a birdwatching session at Roland Bland Park</li>
+            <li>Join the fitness challenge at Circus Square Park</li>
+            <li>Photograph wildlife at H.D Carpenter Park</li>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Redeemable Rewards</h2>
+        <ul>
+            <li>10% off at Olive Garden</li>
+            <li>BOGO Wendy's Dave's Double</li>
+            <li>Beach Bend Day Pass</li>
+            <li>$20 Amazon gift card</li>
+            <li>$0.99 Corn Dogs at Sonic</li>
+        </ul>
+    </div>
+</div>
 
 {% endblock %}

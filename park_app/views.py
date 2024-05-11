@@ -7,7 +7,17 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'park_app/home.html')
 
-
-def parks_view(request):
+def parks(request):
     return render(request, 'park_app/parks.html')
+
+def historical(request):
+    return render(request, 'park_app/historical.html')
+
+def historical_innovation(request):
+    return render(request, 'park_app/historical_innovation.html')
+
+def hunt(request):
+    return render(request, 'park_app/hunt.html')
+
+
 

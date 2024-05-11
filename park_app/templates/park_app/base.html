@@ -32,15 +32,15 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_create">
-                            <a class="dropdown-item" href="{% url 'parks' %}">Park Map</a>
-                            <a class="dropdown-item" href="#">Historical Sites</a>
-                            <a class="dropdown-item" href="#">Scavenger Hunt</a>
+                            <a class="dropdown-item" href="{% url 'parks' %}">Park Map</a>  <!-- Assuming 'parks' is the name of the URL for the parks page -->
+                            <a class="dropdown-item" href="{% url 'historical' %}">Historical Sites</a>
+                            <a class="dropdown-item" href="{% url 'hunt' %}">Scavenger Hunt</a>
                         </div>
                     </li>
                 </div>
             </div>
             <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="{% url 'home' %}">Parks and Recreation</a>
+            <a class="navbar-brand mr-4" href="{% url 'home' %}">Parks and Recreation</a>  <!-- Assuming 'home' is the name of the URL for the home page -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -62,9 +62,9 @@
         </nav>
     </header>
 
+    {% block content %}
 
-<p>test </p>
-
+    {% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

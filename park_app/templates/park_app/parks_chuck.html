@@ -1,0 +1,158 @@
+{% extends "park_app/base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background: #fafafa;
+        color: #333333;
+        margin-top: 5rem;
+    }
+
+    h1 {
+        color: #444444;
+        text-align: center;
+        border-bottom: 2px solid #dddddd;
+        padding-bottom: 10px;
+    }
+
+    .main-container {
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .point-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .list-section {
+        width: 48%; /* Slightly less than half to fit padding */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li ul {
+        padding-left: 20px;
+    }
+
+    .img-container {
+        width: 48%; /* Slightly less than half to fit padding */
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="container">
+    <h1>Chuck Crume Nature Park</h1>
+    <div class="main-container">
+
+        <div>
+            <p>The Chuck Crume Nature Park is a hidden gem in Bowling Green. It is located off the 31W Bypass behind the Unitarian Universalist Church of Bowling Green. This location is the perfect spot for some outdoor exploration for Boy Scout Troops or other nature enthusiasts. Located here is a nature trail, perfect for a run or afternoon walk. You will, also, find picnic tables suitable for an outdoor meal or activity workspace.
+            </p>
+        </div>
+        <!-- Point 1 and Image 1 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Walking & Running Trails
+                        <ul>
+                            <li>This Park offers multiple walking and running trails for the whole family to get involved </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/bgky/CrumeNaturePark30-a30f33e45056b36_a30f34ba-5056-b365-ab4a10efb51d7d69.jpg" alt="Image 1">
+            </div>
+        </div>
+
+        <!-- Point 2 and Image 2 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Picnic Tables
+                        <ul>
+                            <li>Picnic Tables and seating areas are set up for lunches before or after your hike</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://www.nps.gov/common/uploads/cropped_image/primary/5000EB0C-CA57-5E6E-0904A2B6AD2D4F10.jpg?width=1600&quality=90&mode=crop" alt="Image 2">
+            </div>
+        </div>
+
+        <!-- Point 3 and Image 3 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Parking Spaces
+                        <ul>
+                            <li>There are plenty of parking spaces so that you will never have to park far away from the trail head</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://www.wta.org/site_images/trip-reports/2014/p1480810.jpg/@@images/481d6736-f4ca-420d-9bde-3f12d1d851d6.jpeg" alt="Image 3">
+            </div>
+        </div>
+
+        <!-- Point 4 and Image 4 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>Camping
+                        <ul>
+                            <li>There are a wide variety of areas set up for camping. These areas include tent and RV camping</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://www.bgky.org/img/std/1024/Dy6EmW1G.jpg" alt="Image 4">
+            </div>
+        </div>
+
+        <!-- Point 5 and Image 5 -->
+        <div class="point-container">
+            <div class="list-section">
+                <ul>
+                    <li>It's massive
+                        <ul>
+                            <li>Spanning over 20 acres, you will never run out of new places in this part to explore.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/bgky/CrumeNaturePark0-a2d109335056b36_a2d10a13-5056-b365-aba6322c43b1b09a.jpg" alt="Image 5">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
